@@ -37,6 +37,4 @@ Below is the list of all the plugins currently used in this configuration. For m
 * [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indent guides
 * [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Autopairs 
 * [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) - Provides Nerd Font icons
-* [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Neovim colorizer
 * [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Git integration for buffers
-
