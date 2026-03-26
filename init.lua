@@ -12,7 +12,8 @@ vim.o.shiftround = true
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.shell = "zsh"
-vim.o.undodir = os.getenv("HOME") .. "/.local/share/nvim/undo"
+vim.o.clipboard = "unnamedplus"
+--vim.o.undodir = os.getenv("HOME") .. "/.local/share/nvim/undo"
 vim.o.termguicolors = true
 vim.cmd('syntax enable')
 
@@ -42,12 +43,12 @@ vim.pack.add({
   { src = "https://github.com/lukas-reineke/indent-blankline.nvim"},
   { src = "https://github.com/windwp/nvim-autopairs", event = "insertenter"},
   { src = "https://github.com/nvim-tree/nvim-web-devicons"},
-  { src = "https://github.com/norcalli/nvim-colorizer.lua"},
   { src = "https://github.com/lewis6991/gitsigns.nvim"},
 })
 
 --lsp config
 require("mason").setup()
+require("mason-lspconfig").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {"lua_ls", "ts_ls"}
 })
@@ -76,4 +77,3 @@ require("config.treesitter")
 require("config.indent-blankline")
 require("config.gitsigns")
 require("config.autopairs")
-require("config.colorizer")
