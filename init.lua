@@ -23,6 +23,8 @@ vim.api.nvim_set_keymap('n', 'j', 'gj', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', 'k', 'gk', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Tab>', '>>',{noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<<',{noremap = true, silent = true})
+vim.keymap.set('n','gd', vim.lsp.buf.definition, {noremap = true, silent =  true})
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float, {noremap = true, silent =  true})
 
 --plugins
 vim.pack.add({
