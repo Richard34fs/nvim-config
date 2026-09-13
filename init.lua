@@ -13,6 +13,7 @@ vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.shell = "zsh"
 vim.o.clipboard = "unnamedplus"
+vim.o.scrolloff = 4
 --vim.o.undodir = os.getenv("HOME") .. "/.local/share/nvim/undo"
 vim.o.termguicolors = true
 vim.cmd('syntax enable')
@@ -23,8 +24,13 @@ vim.api.nvim_set_keymap('n', 'j', 'gj', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', 'k', 'gk', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Tab>', '>>',{noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<<',{noremap = true, silent = true})
+<<<<<<< HEAD
 vim.keymap.set('n','gd', vim.lsp.buf.definition, {noremap = true, silent =  true})
 vim.keymap.set('n', 'gl', vim.diagnostic.open_float, {noremap = true, silent =  true})
+=======
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {noremap = true, silent = true})
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float, {noremap = true, silent = true})
+>>>>>>> f8c780d (att)
 
 --plugins
 vim.pack.add({
