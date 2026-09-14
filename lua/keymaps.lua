@@ -1,0 +1,5 @@
+vim.api.nvim_set_keymap('n', '<leader>n', ':nohlsearch<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'j', 'gj', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'k', 'gk', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Tab>', '>>',{noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<S-Tab>', '<<',{noremap = true, silent = true})
